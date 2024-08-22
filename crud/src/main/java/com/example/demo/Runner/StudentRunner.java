@@ -11,17 +11,20 @@ import com.example.demo.dao.IStudentDao;
 import com.example.demo.entity.Student;
 
 @Component
-public class StudentRunner   {
+public class StudentRunner implements CommandLineRunner {
 
     @Autowired
     private IStudentDao dao;
 
     public void run(String... args) throws Exception {
-//        System.out.println(dao.getClass().getName());
-//        Student s = new Student(10, "Sachin", "MI", 34);
-//        Student s1 = new Student(11, "Sachin", "M2", 34);
-//        Student s2 = new Student(12, "Sachin", "M2", 34);
-//        dao.saveAll(List.of(s, s1, s2)).forEach(c);
+        System.out.println(dao.getClass().getName());
+        Student s = new Student(10, "Sachin", "MI", 31);
+        Student s1 = new Student(11, "Sachin", "M2", 32);
+        Student s2 = new Student(12, "Sachin", "M2", 33);
+        Student s3 = new Student(10, "Sachin", "MI", 34);
+        Student s4 = new Student(11, "Sachin", "M2", 35);
+        Student s5 = new Student(12, "Sachin", "M2", 36);
+        dao.saveAll(List.of(s, s1, s2,s4,s5,s3));
     	
 //    	 Student retrievedStudent = dao.findById(11).orElseThrow(() -> new StudentNotFoundException("Student not found"));
 //         System.out.println("Retrieved Student: " + retrievedStudent);
