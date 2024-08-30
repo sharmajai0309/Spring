@@ -11,7 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>MVC_ViewToController</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>MVC_BASICS-1</name>
+	<name>MVC_BASICS-V_TO_C</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

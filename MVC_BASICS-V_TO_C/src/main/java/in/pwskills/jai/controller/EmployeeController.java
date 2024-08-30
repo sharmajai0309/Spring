@@ -1,4 +1,4 @@
-package in.pwskills.nitin.controller;
+package in.pwskills.jai.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
